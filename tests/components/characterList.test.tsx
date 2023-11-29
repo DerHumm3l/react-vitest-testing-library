@@ -1,13 +1,13 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { CardList } from "@/components/cardList";
-import { CardContent } from "@/components/card";
+import { CharacterList } from "@/components/characterList";
+import { Character } from "@/components/characterCard";
 
-describe("CardList", () => {
+describe("CharacterList", () => {
   it("empty", async () => {
-    const items: CardContent[] = [];
+    const items: Character[] = [];
 
-    render(<CardList items={items} />);
+    render(<CharacterList items={items} />);
 
     await screen.findByRole("list");
     expect(screen.queryAllByRole("listitem")).toHaveLength(0);

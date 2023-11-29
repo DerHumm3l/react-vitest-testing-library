@@ -1,19 +1,19 @@
 import "./App.css";
-import { CardContent } from "./components/card";
-import { CardList } from "./components/cardList";
+import { Character } from "./components/characterCard";
+import { CharacterList } from "./components/characterList";
 
-const items: CardContent[] = [
+const items: Character[] = [
   {
-    title: "Panam Palmer",
+    fullname: "Panam Palmer",
     description: "Aldecados tribe member.",
   },
   {
-    title: "Rogue Amendiares",
+    fullname: "Rogue Amendiares",
     description: "Well-known fixer in Night City.",
   },
   {
-    title: "Elizabeth Borden",
-    subTitle: "Lizzie",
+    fullname: "Elizabeth Borden",
+    nickname: "Lizzie",
     description: "Joy girl, that founded The Mox.",
   },
 ];
@@ -22,7 +22,7 @@ export default function App() {
   return (
     <>
       <h2>Cyberpunk 2077 characters</h2>
-      <CardList items={items} />
+      <CharacterList items={items} />
     </>
   );
 }
