@@ -1,10 +1,10 @@
 import { Character } from "./character";
 
 export type CharacterCardProps = {
-  content: Character;
+  character: Character;
 };
 
-export function CharacterCard({ content }: CharacterCardProps) {
+export function CharacterCard({ character }: CharacterCardProps) {
   return (
     <section>
       <header>

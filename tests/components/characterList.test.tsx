@@ -7,7 +7,7 @@ describe("CharacterList", () => {
   it("empty", async () => {
     const items: Character[] = [];
 
-    render(<CharacterList items={items} />);
+    render(<CharacterList characters={items} />);
 
     await screen.findByRole("list");
     expect(screen.queryAllByRole("listitem")).toHaveLength(0);

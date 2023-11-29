@@ -22,7 +22,7 @@ export default function App() {
   return (
     <>
       <h2>Cyberpunk 2077 characters</h2>
-      <CharacterList items={items} />
+      <CharacterList characters={items} />
     </>
   );
 }

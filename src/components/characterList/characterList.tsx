@@ -1,15 +1,15 @@
 import { CharacterCard, Character } from "../characterCard";
 
 export type CharacterListProps = {
-  items: Character[];
+  characters: Character[];
 };
 
-export function CharacterList({ items }: CharacterListProps) {
+export function CharacterList({ characters }: CharacterListProps) {
   return (
     <ul>
-      {items.map((item) => (
-        <li key={item.fullname}>
-          <CharacterCard content={item} />
+      {characters.map((character) => (
+        <li key={character.fullname}>
+          <CharacterCard character={character} />
         </li>
       ))}
     </ul>
