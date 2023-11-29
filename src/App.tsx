@@ -20,9 +20,9 @@ const items: Character[] = [
 
 export default function App() {
   return (
-    <>
-      <h2>Cyberpunk 2077 characters</h2>
+    <main className="flex justify-center">
+      <h1>Cyberpunk 2077 characters</h1>
       <CharacterList characters={items} />
-    </>
+    </main>
   );
 }
