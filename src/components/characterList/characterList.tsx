@@ -12,7 +12,6 @@ export function CharacterList({ items }: CharacterListProps) {
           <CharacterCard content={item} />
         </li>
       ))}
-      ;
     </ul>
   );
 }
