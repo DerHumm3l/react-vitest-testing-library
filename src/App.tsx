@@ -1,4 +1,3 @@
-import "./App.css";
 import { Character } from "./components/characterCard";
 import { CharacterList } from "./components/characterList";
 
@@ -20,7 +19,7 @@ const items: Character[] = [
 
 export default function App() {
   return (
-    <main className="flex justify-center">
+    <main className="min-h-screen flex flex-col items-center bg-white text-black dark:bg-black dark:text-white">
       <h1>Cyberpunk 2077 characters</h1>
       <CharacterList characters={items} />
     </main>
